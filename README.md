@@ -1,4 +1,4 @@
-# Aegis v3.2 — Humanitarian Crisis & Recovery Ledger
+# Aegis — Humanitarian Crisis & Recovery Ledger
 
 > **A cryptographically secured logistics and reporting platform for conflict zones and natural disasters.**
 
