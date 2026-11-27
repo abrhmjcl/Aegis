@@ -21,7 +21,7 @@ class LocalStore:
 
     def keys(self, prefix: str) -> list[str]:
         base = self.root / prefix
-        return sorted(str(p.relative_to(self.root)) for p in base.rglob("*") if p.is_file()) if base.exists() else []
+        return sorted(p.relative_to(self.root).as_posix() for p in base.rglob("*") if p.is_file()) if base.exists() else []
 
 
 class S3Store:
