@@ -1,0 +1,20 @@
+:root { --bg:#fafaf8; --fg:#1c1c1a; --muted:#6a6a64; --line:#d9d8d2; --card:#fff; --accent:#1d4e89; --bad:#a4262c; --ok:#1e6b3a; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161615; --fg:#ecebe6; --muted:#a3a29b; --line:#34332f; --card:#1f1f1d; --accent:#7fb0e8; --bad:#ff8a8f; --ok:#6fd08c; } }
+* { box-sizing: border-box; }
+body { margin:0; font:16px/1.5 system-ui, sans-serif; background:var(--bg); color:var(--fg); }
+header { display:flex; justify-content:space-between; align-items:baseline; padding:12px 16px; border-bottom:1px solid var(--line); }
+h1 { margin:0; font-size:1.25rem; } h2 { font-size:1.1rem; margin:1.2rem 0 .5rem; }
+main { padding:16px; max-width:1100px; margin:0 auto; }
+#msg { margin:0 16px; } #msg p { margin:8px 0; padding:8px 12px; border-left:4px solid var(--ok); background:var(--card); }
+#msg p.error { border-color:var(--bad); }
+nav { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
+button, .button { font:inherit; padding:6px 12px; border:1px solid var(--line); background:var(--card); color:var(--fg); border-radius:6px; cursor:pointer; text-decoration:none; }
+button:hover, .button:hover { border-color:var(--accent); } button[aria-current="true"] { background:var(--accent); color:var(--bg); border-color:var(--accent); }
+button.primary { background:var(--accent); color:var(--bg); border-color:var(--accent); } button:disabled { opacity:.5; cursor:not-allowed; }
+form { display:grid; gap:10px; max-width:520px; margin:8px 0 16px; padding:12px; background:var(--card); border:1px solid var(--line); border-radius:8px; }
+label { display:grid; gap:2px; font-size:.9rem; color:var(--muted); }
+input, select, textarea { font:inherit; padding:6px 8px; border:1px solid var(--line); border-radius:6px; background:var(--bg); color:var(--fg); }
+.tablewrap { overflow-x:auto; } table { border-collapse:collapse; width:100%; font-size:.9rem; background:var(--card); }
+th, td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; } th { color:var(--muted); font-weight:600; }
+code { word-break:break-all; font-size:.85rem; } .row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+.bad { color:var(--bad); } .ok { color:var(--ok); } .muted { color:var(--muted); }
