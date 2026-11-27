@@ -1,0 +1,4 @@
+moto==5.2.4
+pillow==12.3.0
+playwright==1.56.0
+reportlab==5.0.1

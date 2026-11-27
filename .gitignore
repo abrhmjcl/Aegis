@@ -1,0 +1,31 @@
+# Environment & Secrets
+.env
+.env.keys
+*.key
+*.pem
+
+# Python Virtual Environment & Caches
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# SQLite Database & WAL Artifacts
+*.db
+*.db-wal
+*.db-shm
+aegis.db
+
+# Storage Blobs & Anchors
+blobs/
+anchors/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp

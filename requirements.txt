@@ -1,0 +1,14 @@
+Authlib==1.9.1
+boto3==1.43.114
+cryptography==50.0.1
+fastapi==0.143.5
+httpx==0.28.1
+itsdangerous==2.2.0
+pikepdf==10.13.0.post1
+PyJWT==2.14.0
+PyOTP==2.10.0
+pytest==9.1.1
+python-multipart==0.0.32
+SQLAlchemy==2.0.35
+starlette==1.6.0
+uvicorn==0.53.0
