@@ -29,3 +29,11 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Extra Test & Build Artifacts
+objs/
+test-results/
+playwright-report/
+node_modules/
+dist/
+build/
